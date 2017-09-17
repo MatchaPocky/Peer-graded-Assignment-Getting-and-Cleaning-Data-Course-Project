@@ -66,4 +66,4 @@ colnames(ExtractData) <- Variablenames1
 ## Export TidyData into"TidyDataSet.txt"
 library(plyr)
 TidyData <- ddply(ExtractData, .(Subject, Activity), function(x) colMeans(x[, 3:48]))
-write.table(TidyData, "TidyDataSet.txt")
+write.table(TidyData, "TidyDataSet.txt", row.name=FALSE)
