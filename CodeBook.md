@@ -32,6 +32,6 @@ The following files were used to obtain the tidy data set
 10. Using the ddply() function from the plyr library, group ExtractData by the variables "Subject" and "Activity" and apply the colMeans function on the rest of the variables to obtain the average of each variable for each activity and each subject.
 11. Extract the data using the write.table() function into "TidyDataSet.txt"
 
-read.table("TidyDataSet.txt"):
+read.table("TidyDataSet.txt", header = TRUE):
 There are a total of 180 observation in the "TidyDataSet.txt" file which corresponds to 30 participants x 6 activities.
 As every variable measured is in one column and each different observation is in a different row, the "TidyDataSet.txt" is a tidy data set.
